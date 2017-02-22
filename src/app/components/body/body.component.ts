@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
   private texto:string = 'Este texto pertenece a una propiedad la clase Body Component';
-  private autor:string = 'Alejandro!'
+  private autor:string = 'Alejandro!';
+  private mostrar:boolean = true;
+
+
   constructor() { }
 
   ngOnInit() {

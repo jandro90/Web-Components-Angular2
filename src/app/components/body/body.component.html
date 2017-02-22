@@ -5,7 +5,9 @@
     <div class="col-xs-12 col-md-6">
       <h2 class="text-center">*ngIf</h2>
       <hr>
-      <div class="card card-inverse card-primary text-center">
+      <button (click)="mostrar = !mostrar" class="btn btn-primary">Ocultar / Mostrar</button>
+      <br><br>
+      <div *ngIf="mostrar" class="card card-inverse card-primary text-center">
         <div class="card-block">
           <blockquote class="card-blockquote">
             <p>{{texto}}</p>
