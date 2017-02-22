@@ -21,10 +21,8 @@
       <h2 class="text-center">*ngFor</h2>
       <hr>
       <div class="card">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+        <ul *ngFor="let personajes of personajes; let i = 'index'" class="list-group list-group-flush">
+          <li class="list-group-item">{{i+1}} {{personajes}}</li>
         </ul>
       </div>
     </div>
